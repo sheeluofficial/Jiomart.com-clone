@@ -55,7 +55,9 @@ function thanks_window() {
   h1.innerHTML = "Thanks for shopping with us";
   var btn = document.createElement("button");
   btn.innerText = "Continue Shopping";
-  btn.addEventListener("click", () => {});
+  btn.addEventListener("click", () => {
+    window.location.href="index.html"
+  });
   btn.setAttribute("class", "continue-shopping-btn");
 
   body_box.append(h1, btn);
